@@ -1,0 +1,101 @@
+{
+  "groups": [
+    {
+      "name": "app.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoAppDataSourceConfig",
+      "sourceMethod": "public javax.sql.DataSource appDataSource() "
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app",
+      "type": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoAppDataSourceConfig",
+      "sourceMethod": "public org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder, javax.sql.DataSource) "
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security",
+      "type": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoSecurityDataSourceConfig",
+      "sourceMethod": "public org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder, javax.sql.DataSource) "
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoSecurityDataSourceConfig",
+      "sourceMethod": "public javax.sql.DataSource securityDataSource() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.bootstrap-executor",
+      "type": "org.springframework.core.task.AsyncTaskExecutor",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.entity-manager-interface",
+      "type": "java.lang.Class<? extends javax.persistence.EntityManager>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.jpa-dialect",
+      "type": "org.springframework.orm.jpa.JpaDialect",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.jpa-property-map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.jpa-vendor-adapter",
+      "type": "org.springframework.orm.jpa.JpaVendorAdapter",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.persistence-provider",
+      "type": "javax.persistence.spi.PersistenceProvider",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.app.persistence-unit-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.bootstrap-executor",
+      "type": "org.springframework.core.task.AsyncTaskExecutor",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.entity-manager-interface",
+      "type": "java.lang.Class<? extends javax.persistence.EntityManager>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.jpa-dialect",
+      "type": "org.springframework.orm.jpa.JpaDialect",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.jpa-property-map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.jpa-vendor-adapter",
+      "type": "org.springframework.orm.jpa.JpaVendorAdapter",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.persistence-provider",
+      "type": "javax.persistence.spi.PersistenceProvider",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.packages-to-scan.security.persistence-unit-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    }
+  ],
+  "hints": []
+}
